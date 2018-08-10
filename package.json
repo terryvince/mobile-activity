@@ -8,8 +8,8 @@
     "serve": "gulp",
     "webpack": "webpack"
   },
-  "author": "TongChia <tongchia@live.com>",
-  "repository": "tongchia/frontend-boilerplate",
+  "author": "terryvince <2931361912@qq.com>",
+  "repository": "/terryvince/mobile-activity",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.55",

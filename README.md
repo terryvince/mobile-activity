@@ -1,6 +1,5 @@
 Frontend Boilerplate
-===
-Maintainer: [Tong Chia](http://www.tongchia.me)  
+=== 
 > A stable front-end boilerplate. In order to adapt to different frameworks and platforms such as: react, angular, backbone, electron, condova ...    
 
 #### ES6/ES7 Support  
@@ -16,16 +15,6 @@ Maintainer: [Tong Chia](http://www.tongchia.me)
 [<img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/chai.svg" height="160" alt="chai"/>](http://chaijs.com/)  
 #### Lint
 [<img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/eslint.svg" height="160" alt="eslint"/>](http://eslint.org/)  
-
-
-## Guide
-```sh
-> git clone "https://github.com/TongChia/frontend-boilerplate.git" my-app
-> cd my-app
-> npm install
-> npm run serve
-```
-
 
 ## Description
 #### Directory
