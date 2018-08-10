@@ -14,6 +14,7 @@ module.exports = {
   entry: {
     main:path.join(root, 'src', 'main.js'),
     'dm-redpacket':path.join(root, 'src', 'dm-redpacket.js'),
+    draw:path.join(root,'src','draw.js'),
   },
   output: path.join(root, '.tmp'),
 

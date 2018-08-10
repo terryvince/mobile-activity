@@ -20,12 +20,26 @@
     top: 0.2rem;
     left: 0.14rem;
   }
-  .pd-head{
+  .pd-head-wrap{
     width: 6.62rem;
     height: 3.38rem;
+    margin: 0.48rem auto 0.27rem;
+  }
+  .pd-head{
+    width: 100%;
+    height: 100%;
     background: url('./libs/img/pd-head.png')center no-repeat;
     background-size: 100% 100%;
-    margin: 0.48rem auto 0.27rem;
+  }
+  .pd-head-down{
+    width: 4.3rem;
+    height: 0.42rem;
+    position: absolute;
+    bottom: 0;
+    background: url('./libs/img/rp-num-bg.png')center no-repeat;
+    background-size: 100% 100%;
+    color: #940002;
+    font-style: oblique;
   }
   .pd-word{
     width: 6.66rem;
@@ -159,6 +173,27 @@
       background-size:100% 100%;
     }
   }
+}
+
+.dw-main{
+  background:url('./libs/img/fp-bg.png')center no-repeat;
+  background-size:100% 100%;
+  width: 100%;
+  height: 100%;
+  .dw-main-bg{
+    background:url('./libs/img/fp-bg2.png')center no-repeat;
+    background-size:100% 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .topic{
+    width: 6.1rem;
+    height: 4.18rem;
+    background:url('./libs/img/fp-topic.png')center no-repeat;
+    background-size:100% 100%;
+    margin: 0.52rem auto 0.1rem;
+  }
+
 }
 
 //适配ipad样式

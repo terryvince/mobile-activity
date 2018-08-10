@@ -8,11 +8,13 @@ import jQuery from 'jquery';
   /*确定奖项-确定范围-确定度数*/
   var circle = $('.pd-circle');	//操作的转盘
   var pointer = $('.pd-pointer');	//指针
+  var leaveCountDiv=$('.pd-head-down');
   var curDeg = 1;				//当前度数
   // var curTime = 0;				//当前运行时长
   var step = 1;					//匀速步长，匀速时每次走的步长
   var speed = 1;				//速度，每次的间隔时间
   var stopDeg = 3 * 360;			//基础停止总圈数
+  var leaveCount=3;
   var prizeData = [/*设立的奖项 		odds 中奖几率区间  num奖项占有数目 angles奖项分布范围*/
     {
       name: '一等奖', key: 'first', odds: [1, 100], num: 1, angles: [
@@ -54,6 +56,13 @@ import jQuery from 'jquery';
 
   //启动转盘
   function start() {
+    if(leaveCount<1)
+    {
+      return;
+    }
+    leaveCount--;
+    leaveCountDiv.html('您有'+leaveCount+'次抽奖机会');
+
     pointer.off('click', start);
     if (curDeg) {
       curDeg = 0;
