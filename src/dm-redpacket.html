@@ -5,14 +5,40 @@
   <title>拆红包</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <% if (dll) { %><script src="vendor.dll.js"></script><% } %>
   <% if (env === "production") { %><link href="main.css" /><% } %>
 </head>
 <body>
 <div class="pd-container">
-
+  <div class="dm-redpackt-main">
+    <div class="pd-logo"></div>
+    <div class="topic"></div>
+    <div class="redpacket margin-center">
+      <p class="fs-30 txt-center fs-yellow">您收到一个红包！</p>
+    </div>
+    <div class="word margin-center"></div>
+  </div>
+  <div class="dm-shadow shadow">
+      <div class="box center">
+        <div class="top txt-center txt-white fs-36 txt-bold">
+            很遗憾！
+        </div>
+        <div class="main margin-center">
+            <div class="word txt-center">
+                <div class="word-one width-full fs-24 table-cell inline-vertical txt-bold">
+                  <p>很遗憾，你未中奖请再接再厉！</p>
+                </div>
+                <div class="word-two width-full fs-24 table-cell inline-vertical txt-bold">
+                  <p>恭喜获得1等奖</p>
+                  <p class="fs-16 txt-normal top-10">请尽快联系客服领取！恭喜中奖</p>
+                </div>
+            </div>
+            <a class="btn fs-28 inline txt-bold txt-center horizantal">前往领取</a>
+        </div>
+      </div>
+  </div>
 </div>
 <script src="./dm-redpacket.js"></script>
 </body>

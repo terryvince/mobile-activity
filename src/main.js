@@ -1,8 +1,9 @@
 import './style.scss';
 import './libs/js/suit';
+import {RandomNum} from './libs/js/utils';
 import jQuery from 'jquery';
 
-(function () {
+(function ({console}) {
   var $ = jQuery;
   /*确定奖项-确定范围-确定度数*/
   var circle = $('.pd-circle');	//操作的转盘
@@ -108,21 +109,13 @@ import jQuery from 'jquery';
     }
   }
 
-  //产生随机度数,含头不含尾
-  function RandomNum(Min, Max) {
-    var Range = Max - Min;
-    var Rand = Math.random();
-    var num = Min + Math.floor(Rand * Range); //舍去
-    return num;
-  }
-
   //停止转动
   function stop(curInfo) {
     clearInterval(timerStart);
     pointer.on('click', start);
-    window.console.log(curInfo);
+    console.log(curInfo);
     alert(curInfo.name);
   }
 
   pointer.on('click', start);
-})();
+})(window);

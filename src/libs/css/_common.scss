@@ -102,7 +102,7 @@
 }
 
 .warning-border {
-  border: 1px solid red;
+  border: 0.01rem solid red;
 }
 
 /*正确的提示色*/
@@ -111,11 +111,11 @@
 }
 
 .success-border {
-  border: 1px solid lightgreen;
+  border: 0.01rem solid lightgreen;
 }
 
 .border-default {
-  border: 1px solid #eaeaea;
+  border: 0.01rem solid #eaeaea;
 }
 
 .txt-bold {
@@ -128,10 +128,6 @@
 
 .txt-break {
   word-wrap: break-word;
-}
-
-.left-margin {
-  margin-left: 20px;
 }
 
 .no-margin {
@@ -184,7 +180,7 @@
 }
 
 .box-shadow{
-  box-shadow: 0 8px 16px 0 #ededed,0 6px 20px 0 #ededed;
+  box-shadow: 0 0.08rem 0.16rem 0 #ededed,0 0.06rem 0.2rem 0 #ededed;
 }
 
 .width-full {
@@ -192,11 +188,11 @@
 }
 
 .width-25 {
-  width: 25px !important;
+  width: 0.25rem !important;
 }
 
 .width-50 {
-  width: 50px !important;
+  width: 0.5rem !important;
 }
 
 .width-50_ {
@@ -215,38 +211,20 @@
   width: 25% !important;
 }
 
-.width-100 {
-  width: 100px !important;
-}
-
 .width-150 {
-  width: 150px !important;
-}
-
-.width-200 {
-  width: 200px !important;
+  width: 10.5rem !important;
 }
 
 .width-250 {
-  width: 250px !important;
+  width: 20.5rem !important;
 }
 
-.width-300 {
-  width: 300px !important;
-}
-
-.width-400 {
-  width: 400px !important;
-}
-.width-pc{
-  width: 1200px!important;
-}
 .height-25 {
-  height: 25px !important;
+  height: 0.25rem !important;
 }
 
 .height-50 {
-  height: 50px !important;
+  height: 0.5rem !important;
 }
 
 .height-100 {
@@ -267,14 +245,14 @@
 }
 
 .top-10{
-  margin-top: 10px;
+  margin-top: 0.1rem;
 }
 .top-25 {
-  margin-top: 25px;
+  margin-top: 0.25rem;
 }
 
 .top-50 {
-  margin-top: 50px;
+  margin-top: 0.5rem;
 }
 
 .p-left {
@@ -291,46 +269,42 @@
   bottom: 0!important;
 }
 .left-10 {
-  margin-left: 10px;
+  margin-left: 0.1rem;
 }
 .left-15{
-  margin-left: 15px;
+  margin-left: 0.15rem;
 }
 .left-25 {
-  margin-left: 25px;
+  margin-left: 0.25rem;
 }
 
 .left-50 {
-  margin-left: 50px;
-}
-
-.left-100 {
-  margin-left: 100px;
+  margin-left: 0.5rem;
 }
 
 .right-15 {
-  margin-right: 15px;
+  margin-right: 0.15rem;
 }
 
 .right-25 {
-  margin-right: 25px;
+  margin-right: 0.25rem;
 }
 
 .right-50 {
-  margin-right: 50px;
+  margin-right: 0.5rem;
 }
 .bottom-10 {
-  margin-bottom: 10px;
+  margin-bottom: 0.1rem;
 }
 .bottom-20{
-  margin-bottom: 20px;
+  margin-bottom: 0.2rem;
 }
 .bottom-25 {
-  margin-bottom: 25px;
+  margin-bottom: 0.25rem;
 }
 
 .bottom-50 {
-  margin-bottom: 50px;
+  margin-bottom: 0.5rem;
 }
 
 .pointer {

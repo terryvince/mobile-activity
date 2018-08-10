@@ -76,6 +76,106 @@
     height: 4.68rem;
   }
 }
-.dm-redpackt{
+.dm-redpackt-main{
+  background:url('./libs/img/rp-bg.png')center no-repeat;
+  background-size:100% 100%;
+  width: 100%;
+  height: 100%;
+  .topic{
+    width: 100%;
+    height: 5.56rem;
+    background: url('./libs/img/rp-topic.png')center no-repeat;
+    background-size:100% 100%;
+  }
+  .redpacket{
+    width: 100%;
+    height: 6rem;
+    background: url('./libs/img/rp-redpacket.png')center no-repeat;
+    background-size:100% 100%;
+    position: relative;
+    //top: -1rem;
+    p{
+      position:relative;
+      top: 1rem;
+    }
+  }
+  .word{
+    width: 6.38rem;
+    height: 1.48rem;
+    background: url('./libs/img/rp-word.png')center no-repeat;
+    background-size:100% 100%;
+  }
+  .fs-yellow{
+    color: #fcfc08;
+  }
+}
+.shadow{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.4);
+  .box{
+    width: 6rem;
+    height: 3.57rem;
+    .top{
+      width: 100%;
+      height: 1.14rem;
+      line-height: 0.8rem;
+    }
+    .main{
+      height: 2.72rem;
+      width: 4.68rem;
+      background: #FFFFFF;
+      position: relative;
+      top: -0.3rem;
+      border-radius:0 0 0.15rem 0.15rem;
+      .btn{
+        width: 2.22rem;
+        height: 0.62rem;
+        line-height: 0.62rem;
+        background: url('./libs/img/rp-btn-ye.png')center no-repeat;
+        background-size: 100% 100%;
+        color: #fd5437;
+        position: absolute;
+        bottom: 0.35rem;
+      }
+    }
+    .word{
+      height: 1.75rem;
+      width: 100%;
+      display: table;
+      p{
+        color: #030303;
+      }
+    }
+    .top-red{
+      background: url("./libs/img/rp-dialog-red.png")center no-repeat;
+      background-size:100% 100%;
+    }
+    .top-gray{
+      background: url("./libs/img/rp-dialog-gray.png")center no-repeat;
+      background-size:100% 100%;
+    }
+  }
+}
 
+//适配ipad样式
+@media all and (min-height:1024px){
+  .pd-container {
+    position: absolute;
+    width: 100%;
+    height: 14rem;
+    top: 0;
+  }
+}
+//适配横屏样式
+@media all and (orientation : landscape) {
+  .pd-container {
+    position: absolute;
+    width: 100%;
+    height: 14rem;
+    top: 0;
+  }
 }
