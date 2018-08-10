@@ -1,0 +1,369 @@
+/*左浮动*/
+.left-float {
+  float: left;
+}
+
+/*右浮动*/
+.right-float {
+  float: right;
+}
+
+/*不保留位置显示*/
+.show {
+  display: block !important;
+}
+.block{
+  display: block;
+}
+/*不保留位置隐藏*/
+.hide {
+  display: none !important;
+}
+
+/*清除浮动，加在父级上*/
+.clear {
+  overflow: hidden;
+}
+.clear-both{
+  clear: both;
+}
+/*保留位置隐藏*/
+.disappear {
+  visibility: hidden;
+}
+
+/*保留位置显示*/
+.appear {
+  visibility: visible;
+}
+
+/*相对定位*/
+.rel-position {
+  position: relative;
+}
+
+.pos-position {
+  position: absolute;
+}
+
+/*文本居中*/
+.txt-center {
+  text-align: center;
+}
+
+/*文本两端对齐*/
+.txt-justify {
+  text-align: justify;
+}
+.txt-right{
+  text-align: right;
+}
+.txt-underline {
+  text-decoration: underline;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+/*应用在块级元素的垂直居中*/
+.vertical {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+/*应用在块级元素的水平居中*/
+.horizantal{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/*应用在块级元素的水平垂直居中*/
+.center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+/*错误的提示色*/
+.warning-color {
+  color: red;
+}
+
+.warning-border {
+  border: 1px solid red;
+}
+
+/*正确的提示色*/
+.success-color {
+  color: lightgreen;
+}
+
+.success-border {
+  border: 1px solid lightgreen;
+}
+
+.border-default {
+  border: 1px solid #eaeaea;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.txt-normal {
+  font-weight: normal !important;
+}
+
+.txt-break {
+  word-wrap: break-word;
+}
+
+.left-margin {
+  margin-left: 20px;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-border {
+  margin: 0 !important;
+}
+
+.txt-black {
+  color: #222222;
+}
+
+.txt-white {
+  color: white !important;
+}
+
+.bg-white {
+  background: #FFFFFF !important;
+}
+
+.inline-vertical {
+  vertical-align: middle;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+}
+
+.inline {
+  display: inline-block;
+}
+.dis-table
+{
+  display: table;
+}
+
+.table-cell{
+  display: table-cell;
+}
+
+.box-shadow{
+  box-shadow: 0 8px 16px 0 #ededed,0 6px 20px 0 #ededed;
+}
+
+.width-full {
+  width: 100% !important;
+}
+
+.width-25 {
+  width: 25px !important;
+}
+
+.width-50 {
+  width: 50px !important;
+}
+
+.width-50_ {
+  width: 50% !important;
+}
+
+.width-75_ {
+  width: 75% !important;
+}
+
+.width-33_ {
+  width: 33.33333333333% !important;
+}
+
+.width-25_ {
+  width: 25% !important;
+}
+
+.width-100 {
+  width: 100px !important;
+}
+
+.width-150 {
+  width: 150px !important;
+}
+
+.width-200 {
+  width: 200px !important;
+}
+
+.width-250 {
+  width: 250px !important;
+}
+
+.width-300 {
+  width: 300px !important;
+}
+
+.width-400 {
+  width: 400px !important;
+}
+.width-pc{
+  width: 1200px!important;
+}
+.height-25 {
+  height: 25px !important;
+}
+
+.height-50 {
+  height: 50px !important;
+}
+
+.height-100 {
+  height: 100px !important;
+}
+
+.height-200 {
+  height: 200px !important;
+}
+.height-300{
+  height: 300px!important;
+}
+.height-full{
+  height: 100%;
+}
+.height-_50{
+  height: 50%;
+}
+
+.top-10{
+  margin-top: 10px;
+}
+.top-25 {
+  margin-top: 25px;
+}
+
+.top-50 {
+  margin-top: 50px;
+}
+
+.p-left {
+  left: 0 !important;
+}
+
+.p-right {
+  right: 0 !important;
+}
+.p-top{
+  top: 0!important;
+}
+.p-down{
+  bottom: 0!important;
+}
+.left-10 {
+  margin-left: 10px;
+}
+.left-15{
+  margin-left: 15px;
+}
+.left-25 {
+  margin-left: 25px;
+}
+
+.left-50 {
+  margin-left: 50px;
+}
+
+.left-100 {
+  margin-left: 100px;
+}
+
+.right-15 {
+  margin-right: 15px;
+}
+
+.right-25 {
+  margin-right: 25px;
+}
+
+.right-50 {
+  margin-right: 50px;
+}
+.bottom-10 {
+  margin-bottom: 10px;
+}
+.bottom-20{
+  margin-bottom: 20px;
+}
+.bottom-25 {
+  margin-bottom: 25px;
+}
+
+.bottom-50 {
+  margin-bottom: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.lh-1_5{
+  line-height: 1.5;
+}
+
+.lh-2_{
+  line-height: 2;
+}
+.lh-2_5{
+  line-height: 2.5;
+}
+
+//选择重用样式
+.z-index-1{
+  z-index: 1;
+}
+.z-index-2{
+  z-index: 2;
+}
+.z-index-3{
+  z-index: 3;
+}
+.z-index-4{
+  z-index: 4;
+}
+.z-index-99{
+  z-index: 99;
+}
+.z-index--1{
+  z-index: -1;
+}

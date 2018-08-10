@@ -72,11 +72,38 @@ gulp.task('serve', (done) => {
 });
 
 gulp.task('watch', (done) => {
-  gulp.watch([join(src, '**/*'), '!' + htmlFile], gulp.series('webpack:app'));
-  gulp.watch(htmlFile, gulp.series('html'));
+  let allPath=findSync(src);
+  for(let i=0;i<allPath.length;i++)
+  {
+    if(allPath[i].indexOf('.html')>-1)
+    {
+      gulp.watch(allPath[i],gulp.series('html'));
+    }
+    else{
+      gulp.watch(allPath[i],gulp.series('webpack:app'));
+    }
+  }
+  // gulp.watch([join(src, '**/*'), '!' + htmlFile], gulp.series('webpack:app'));
+  // gulp.watch(htmlFile, gulp.series('html'));
   done();
 });
 
 gulp.task('default', gulp.series('build', 'serve', 'watch'));
 
 //TODO: test & zip & cdn
+//get files path
+function findSync(startPath) {
+  let result=[];
+  function finder(path) {
+    let files=fs.readdirSync(path);
+    files.forEach((val,index) => {
+      let fPath=join(path,val);
+      let stats=fs.statSync(fPath);
+      if(stats.isDirectory()) finder(fPath);
+      if(stats.isFile()) result.push(fPath);
+    });
+
+  }
+  finder(startPath);
+  return result;
+}

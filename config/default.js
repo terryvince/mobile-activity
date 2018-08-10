@@ -11,10 +11,13 @@ module.exports = {
 
   root,
   src: path.join(root, 'src'),
-  entry: path.join(root, 'src', 'main.js'),
+  entry: {
+    main:path.join(root, 'src', 'main.js'),
+    'dm-redpacket':path.join(root, 'src', 'dm-redpacket.js'),
+  },
   output: path.join(root, '.tmp'),
 
-  // vendors: ['lodash'],
+  vendors: ['lodash','jquery'],
   proxies: [
     {path: '/api', url: 'http://localhost:3001/api/v1'},
   ],

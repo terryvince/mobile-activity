@@ -1,0 +1,142 @@
+/*rem基准尺寸*/
+html {
+  font-size: 100rem;
+  color: #222222;
+  font-family: '微软雅黑';
+  box-sizing: border-box; /*以前开发用的是ie盒模型，因为设计的时候不需要考虑padding影响的问题*/
+}
+*{
+  box-sizing: inherit;
+}
+/*去默认边距，设置盒模型*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td,figure,figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+/*表格的边框合并，边距0*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table thead tr th {
+  text-align: center;
+}
+
+fieldset, img, iframe{
+  border: 0;
+}
+
+img, embed, object, audio, video {
+  height: auto;
+  max-width: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*去除默认列表的项目符号*/
+ol, ul {
+  list-style: none;
+}
+
+/*标题样式重置左对齐*/
+caption, td, th {
+  text-align: left;
+}
+
+/*这个根据情况自己设置，可以参考下bootstrap的reset样式*/
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+}
+
+/*去除默认a标签下划线，链接颜色*/
+a {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  /*color: rgb( 51, 51, 51 );*/
+}
+
+/*去除表单域的默认边框，方便自己定制样式*/
+input, button, textarea {
+  outline: none;
+  resize: none;
+}
+button{
+  border: none;
+  font-family: 微软雅黑;
+}
+
+/*select{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background:url(../img/select-ico.png)no-repeat;
+	background-position: right;
+	background-size:25px ;
+}*/
+.fs-12 {
+  font-size: 0.12rem;
+}
+
+.fs-14 {
+  font-size: 0.14rem;
+}
+
+.fs-16 {
+  font-size: 0.16rem;
+}
+
+.fs-18 {
+  font-size: 0.18rem;
+}
+
+.fs-20 {
+  font-size: 0.20rem;
+}
+
+.fs-22 {
+  font-size: 0.22rem;
+}
+
+.fs-24 {
+  font-size: 0.24rem;
+}
+
+.fs-26 {
+  font-size: 0.26rem;
+}
+
+.fs-28 {
+  font-size: 0.28rem;
+}
+
+.fs-30 {
+  font-size: 0.30rem;
+}
+
+.fs-32 {
+  font-size: 0.32rem;
+}
+
+.fs-34 {
+  font-size: 0.34rem;
+}
+
+.fs-36 {
+  font-size: 0.36rem;
+}
